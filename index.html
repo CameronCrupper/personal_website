@@ -1,13 +1,641 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cameron Jones-Crupper</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
-    <div class="h1">Under Construction...</div>
-    <!-- <div class="h1">testing</div> -->
+
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="favicon.ico" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#works">Works</a></li>
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Hello</div>
+                        <h1 class="s-intro__content-title">
+                        I'm Cameron Jones-Crupper <br>
+                        a Junior Software Developer <br>
+                        from Oklahoma.
+                        </h1>
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                        </div> <!-- s-intro__content-btns -->
+                    </div> <!-- s-intro__content-text -->
+                </div> <!-- s-intro__content-inner -->
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+                <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+                        <li>
+                            <a class="social-button github" href="https://github.com/CameronCrupper" width="24" height="24" viewBox="0 0 24 24" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-button linkedin" href="https://www.linkedin.com/in/cameroncrupper/" width="24" height="24" viewBox="0 0 24 24" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">
+                <img src="images/Headshot.jpg" srcset="images/Headshot.jpg 1x, images/Headshot.jpg 2x" alt="">
+            </div> <!-- s-intro__content-media -->
+
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="images/Resume/Resume.pdf">Get My Resume</a>
+            </div> <!-- end s-intro__btn-download -->
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div> <!-- end section-header -->
+
+                    <p class="attention-getter">
+                        I have always wanted to work with computers. I took a workshop as a kid where we got to build our own computers, and then with them got to build our own website. I still remember that bright green background I used that I was so excited about because it was different from anything I had seen before. In Highschool I took a C++ class and built a simple version of the game TRON as one of my projects so my friends and I could play it after class.
+                    </p>
+
+                    <p class="attention-getter">
+                        From there I put my all into jobs that weren’t going to take me where I wanted to go; doing what I could to survive in the world. Saying that though, I’ve always had a great work ethic and no matter what job I was at I did it to the absolute best of my abilities. I did everything from Pizza Delivery, Compounding Technician, Accounting, and Hospice Medication Delivery, which was one of my favorite for the level of compassion and care I could provide to another person.
+                    </p>
+
+                    <p class="attention-getter">
+                        I remember one day our rent increased and our finances got just a little too tight for comfort. I had reached a point where I knew I wanted something more in my life, so I did something about it. “Success usually comes to those who are too busy looking for it.” – Henry David Thoreau. Now I’m here and I am ready to keep going. I’m currently a student at Holberton Tulsa, and while here I’ve gotten a solid understanding of Python, C, Javascript, HTML, CSS, Flutter and React. I plan to keep going. I’m here for Fullstack Web Development, the continuation of that childhood dream.
+                    </p>
+
+                    <div class="grid-list-items s-about__blocks">
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Technical Skills</h4>
+                            <ul class="s-about__list">
+                                <li>
+                                    Python
+                                    <!-- <span>Product Designer</span> -->
+                                </li>
+                                <li>
+                                    HTML
+                                    <!-- <span>Interface Developer</span> -->
+                                </li>
+                                <li>
+                                    Ghostwind
+                                    <!-- <span>Lead UI Designer</span> -->
+                                </li>
+                                <li>
+                                    Tailwind
+                                    <!-- <span>UI Designer</span> -->
+                                </li>
+                                <li>
+                                    Javascript
+                                    <!-- <span>UI Designer</span> -->
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Technical Skills</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    <a href="#0">
+                                        C Programming Language
+                                        <!-- <span>Awwwards — 2023</span> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Dart
+                                        <!-- <span>Awwwards — 2023</span> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Flutter
+                                        <!-- <span>Awwwards — 2022</span> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Figma
+                                        <!-- <span>FWA — 2022</span> -->
+                                    </a>
+                                </li><li>
+                                    <a href="#0">
+                                        Github
+                                        <!-- <span>Awwwards — 2022</span> -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Professional Skills</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    Product Design
+                                </li>
+                                <li>
+                                    UI/UX Design
+                                </li>
+                                <li>
+                                    Prototyping
+                                </li>
+                                <li>
+                                    Frontend Development
+                                </li>
+                                <li>
+                                    Backend Development
+                                </li>
+                                <li>
+                                    Illustration
+                                </li>
+                                <li>
+                                    Problem Solving
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+                    </div> <!-- grid-list-items -->
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+        </section> <!-- end s-about -->
+
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">Selected Works.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row folio-entries">
+
+                <div class="column entry">
+                    <a href="images/Blawesome/Blawsome.gif" class="entry__link glightbox" data-glightbox="title: Blawesome Game; description: .entry__desc-01">
+                        <div class="entry__thumb">
+                            <img src="images/Blawesome/Blawsometree picture.jpg" srcset="images/Blawesome/Blawsometree picture.jpg 1x, images/Blawesome/Blawsometree picture.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Blawesome Tree</h4>
+                            <div class="entry__cat">Hack sprint item catching Pygame</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-01">
+                        <p>
+                            We were given a prompt “blossom” and told to create whatever we like
+                            using any language. We had just learned basic Python and I had always
+                            love creating games, so we came up with BlawesomeTree.py. You control a
+                            basket and fruits will randomly spawn while you attempt to catch as many
+                            as possible. We only had 5 days to create it and working with a bunch
+                            of new python features was very challenging but so much fun. Some
+                            of the features include the basket staying within the screen parameters,
+                            a scoreboard, randomization of fruit locations and the speeds they fall
+                            at, music (copyright free of course), and it will print to the console
+                            an incrementing number every time you score. We both had a great time
+                            creating this game and I’ll probably create another different game
+                            with Pygame in the future. Please enjoy BlawesomeTree.py. To run it
+                            you need an IDE we used VScode and Python, clone the repository and
+                            run blawesome_tree.py. In the command line Change directory to
+                            HackSprintBlossom and the enter ./blawesome_tree.py or you can go to the link
+                            and play it that way.
+                        <a href="https://replit.com/@CameronCrupper/HackSprintBlossom?v=1">Project Link</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column entry">
+                    <a href="images/Wave/wwpgif.gif" class="entry__link glightbox" data-glightbox="title: Quick Wave Website; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/Wave/WWP.jpg" srcset="images/Wave/WWP.jpg 1x, images/Wave/WWP.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Wave Website</h4>
+                            <div class="entry__cat">Quick Development of Website</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-02">
+                        <p>
+                            We were given the prompt (You and your team have been contacted by a local, elusive, client.
+                            They have a new product and they need a responsive website built for them in
+                            order to market it online; they know you’ve got just the right skill set to
+                            craft their vision. Secretive as they are, they have decided to NOT give you
+                            details about their company, nor give you details on the product they are
+                            selling. Instead, they hand over to you a simple sentence, which they want
+                            you to interpret, in order to build the best possible responsive website for
+                            them to use as a marketing tool. The sentence they give you is: “Waves”) and
+                            5 days to create a custom frontend website from scratch.
+                            I’m really proud of the work I was able to get done on this by myself in such
+                            a short amount of time and I think it reflects my learning from the frontend
+                            section of course work. This was also my first time working with Tailwind
+                            and not CSS so I was pretty pleased with the results, and I hope you are too.
+                        <a href="https://github.com/CameronCrupper/waves-website">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/Letseat/1 slide.gif" class="entry__link glightbox" data-glightbox="title: Login and Home/Directions Page; description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="images/Logo1.png" srcset="images/Logo1.jpg 1x, images/Logo1.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Let's Eat</h4>
+                            <div class="entry__cat">An App That Decides What's for Dinner</div>
+                        </div>
+                    </a>
+                    <a href="images/Letseat/2 slide.gif" class="entry__link glightbox" data-glightbox="title: Finding Friends; description: .entry__desc-04"></a>
+                    <a href="images/Letseat/3 slide.gif" class="entry__link glightbox" data-glightbox="title: Setting Preferences; description: .entry__desc-05"></a>
+                    <a href="images/Letseat/4 slide.gif" class="entry__link glightbox" data-glightbox="title: Setting Your Location and Starting a New Table; description: .entry__desc-06"></a>
+                    <a href="images/Letseat/5 slide.gif" class="entry__link glightbox" data-glightbox="title: Getting a Restaurant Returned; description: .entry__desc-07"></a>
+
+
+                    <div class="glightbox-desc entry__desc-03">
+                        <p>
+                            This app was created as our final project at Holberton Tulsa. We
+                            came up with every aspect of this app ourselves from brainstorming
+                            initial ideas to final app development. Our initial concept was
+                            “it’s really difficult to decide what to have for dinner, especially
+                            in a group of 2 or more”, so we created Let’s Eat.
+                            It’s an app that allows you to input preferences for types of food
+                            (American, Asian, Mexican, BBQ, etc.) invite friends into a group
+                            and return a restaurant that gives the highest score between everyone
+                            in the group within a certain distance of the person who created
+                            the group. This can also be accomplished with one person only
+                            giving their preferences and finding a restaurant nearby that
+                            returns the highest score. You start with a login page where you
+                            can create a new account as long as it fits within certain
+                            criteria or log in using an existing google account.
+                            A homepage that displays your current
+                            entered location as well as instructions for the app how many
+                            friends you have and how many tables you are currently at.
+                        <a href="https://github.com/CameronCrupper/Lets_Eat">Project Link</a>.
+                        </p>
+                    </div>
+
+
+                    <div class="glightbox-desc entry__desc-04">
+                        <p>
+                    Next is our friends list page where you can search and add friends.
+                    A list of only avialable friends will be displayed and once a
+                    friend is added they will be removed from the available pool. On your homepage
+                    how many friends you have will be displayed. There is also a search function
+                    that will display any name that matches its given search result.
+                        </p>
+                    </div>
+
+                    <div class="glightbox-desc entry__desc-05">
+                        <p>
+                            We used a Yelp API that has over 200 options. So nothing should be missed. Setting
+                            your preferences stores them on firebase and this was a situation we had to deal with
+                            early on. There was a sight lag that we were able to fix so now the sliders move smoothly.
+                            And it's one of my favorite pages now.
+                        </p>
+                    </div>
+
+                                <div class="glightbox-desc entry__desc-06">
+                                    <p>
+                                        An important part is setting your location so the API can find out where you
+                                        actually are. You can view the currently set location on your homepage. Starting a "table" which is just the name we've given for a group you create, will allow you to invite any friends you have added
+                            that are available from your friends list and create a table name for
+                            your group. That table name will then be displayed on the Tables page.
+                                    </p>
+                                </div>
+
+                                <div class="glightbox-desc entry__desc-07">
+                                    <p>
+                                        Once you click on your created table you are able to then remove friends if
+                                        necessary and search for your restaurant. The search will compare all friends
+                                        ratings they have given to the different categories and return the option with the highest score
+                                        within a 15 mile radius of the table creator.
+                                    </p>
+                                </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/Construction/under-construction.jpg" class="entry__link glightbox" data-glightbox="title: New Game Being Developed; description: .entry__desc-08">
+                        <div class="entry__thumb">
+                            <img src="images/Construction/under-construction.jpg" srcset="images/Construction/under-construction.jpg 1x, images/Construction/under-construction.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">New Project</h4>
+                            <div class="entry__cat">Currently Under Construction</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-08">
+                        <p>
+                        As a side project I'm starting to work on a small game just for fun. Come back and check it out in the future!
+                        <p>No project here, but here's a fun <a href="https://findtheinvisiblecow.com/">link</a> to find an invisible cow</p>
+                        </p>
+                    </div>
+                </div><!-- entry -->
+
+            </div> <!-- folio entries -->
+
+
+            <div class="row s-testimonials">
+                <div class="column xl-12">
+
+                    <h3 class="s-testimonials__header">Description of Projects</h3>
+                    <div class="swiper-container s-testimonials__slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/Logo1.jpg" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Let's Eat</strong>
+                                        <span>App that decides what to eat for you</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                How many times have you gotten to dinner time and the question comes up.
+                                What would YOU like for DINNER? It's a question that's plagued mankind for centuries
+                                . That's why we developed Let's Eat! You can create a profile as well as friends can too,
+                                and input preferences that will be compared with anyone else you have at your table and
+                                will return a restaurant with 15 miles on the head of the table that best fits with
+                                everyones preferences. Try it out!
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/Blawesome/Blawsometree picture.jpg" alt="Game image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Fruit Blossom</strong>
+                                        <span>Pygame where you catch fruit in a basket</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                As one of our projects during school we were given a short period of time to create whatever
+                                we wanted that came to our minds with the prompt "Blossom". I've always enjoyed video games and
+                                me and my partner came up with a simple item catching game in a matter of 1 week. We were both very proud
+                                of this project.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/Wave/WWP.jpg" alt="Website image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Wave Website</strong>
+                                        <span>Develope a frontend website</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Another fun project with just a prompt was the "Wave" frontend website project.
+                                Within a little more than a week I worked on this frontend wensite. I was fairly new into
+                                coding and website development but still I was excited to complete this project.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/Construction/under-construction.jpg" alt="Under Construction Image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>TBD</strong>
+                                        <span>New Project Being Worked On</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    <!-- Insert Description Here -->
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+                        </div> <!-- end swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
+                    </div> <!-- end swiper-container -->
+                </div> <!-- end column -->
+            </div> <!-- end s-testimonials -->
+
+        </section> <!-- end s-works -->
+
+
+        <!-- # numbers
+        ================================================== -->
+        <section id="numbers" class="s-numbers">
+
+            <div class="row counter-items">
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        20
+                        <span>+</span>
+                    </div>
+                    <h5>Months of Training</h5>
+                    <p>
+                    Attending Holberton School has given me the tools to learn HOW to code.
+                    I can pick up and use new tools and learn new things in a very short
+                    ammount of time thanks to Holberton.
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        33
+                        <span>+</span>
+                    </div>
+                    <h5>Repositories</h5>
+                    <p>
+                    Filled with hundreds of projects, assigned and creative. I'm constantly adding new things now that I've graduated holberton. This website being the most recent project.
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        23k
+                        <span>+</span>
+                    </div>
+                    <h5>Lines of Code</h5>
+                    <p>
+                        I'm proud to announce that my Github repository now boasts an impressive 23,000 lines of meticulously crafted code! Each line represents countless hours of dedication and expertise, a testament to my passion for creating elegant and efficient solutions.
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        26
+                        <span>+</span>
+                    </div>
+                    <h5>Different Coding Languages/Technologies Used</h5>
+                    <p>
+                        I take immense pride in my diverse technical repertoire, having successfully navigated my way through a staggering array of 26 coding languages and technologies. From Python to Dart, JavaScript to C, I've honed my skills across various domains, proving my versatility and adaptability as a developer. With this extensive toolbox at my disposal, I am poised to tackle any coding challenge that comes my way with confidence and finesse.
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+            </div>  <!-- end counter-items -->
+
+        </section> <!-- end s-numbers -->
+
+
+        <!-- # footer
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">
+                    <p class="attention-getter">
+                        Thank you for visiting my personal website and taking the time to explore my journey as a developer. Through this platform, I aimed to showcase my passion for coding and my continuous growth in the field. As a junior developer, I am enthusiastic about tackling new challenges, expanding my skill set, and contributing to innovative projects. I invite you to connect with me and explore potential collaborations or opportunities where I can contribute my knowledge and expertise. Thank you for your support, and I look forward to the exciting possibilities that lie ahead in my career as a developer.
+                    </p>
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="https://www.linkedin.com/in/cameroncrupper/">Linkedin</a></li>
+                                <li><a href="https://github.com/CameronCrupper">Github</a></li>
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:cameron.jones.crupper@gmail.com">cameron.jones.crupper@gmail.com</a></li>
+                                <li><a href="tel:+19183139706">+1 (918) 313 - 9706</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- end section-footer__site-links -->
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:cameron.jones.crupper@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+                <div class="column xl-6 tab-12">
+                    <a href="images/Resume/Resume.pdf" class="btn btn--stroke btn--large u-fullwidth">Get My Resume</a>
+                </div>
+            </div> <!-- end section-footer__buttons -->
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+                        <li>
+                            <a class="social-button github" href="https://github.com/CameronCrupper" width="24" height="24" viewBox="0 0 24 24" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-button linkedin" href="https://www.linkedin.com/in/cameroncrupper/" width="24" height="24" viewBox="0 0 24 24" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div> <!-- end section-footer__social -->
+
+            </div> <!-- end section-footer__bottom -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>
+                <span>Back To Top</span>
+            </div>
+            <!-- end ss-go-top -->
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
